@@ -5,12 +5,10 @@
 	<groupId>tk.mybatis</groupId>
 	<artifactId>simple</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-
 	<properties>
-		<java.version>1.6</java.version>
+		<java.version>1.8</java.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
-
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
@@ -26,7 +24,7 @@
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
-			<version>5.1.38</version>
+			<version>8.0.19</version>
 		</dependency>
 		<dependency>
 			<groupId>org.slf4j</groupId>
@@ -44,7 +42,6 @@
 			<version>1.2.17</version>
 		</dependency>
 	</dependencies>
-
 	<build>
 		<plugins>
 			<plugin>
