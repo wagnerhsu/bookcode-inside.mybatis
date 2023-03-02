@@ -14,20 +14,20 @@ import org.junit.BeforeClass;
  */
 public class BaseMapperTest {
 	private static SqlSessionFactory sqlSessionFactory;
-	
+
 	@BeforeClass
-	public static void init(){
+	public static void init() {
 		try {
-            Reader reader = Resources.getResourceAsReader("mybatis-config.xml");
-            sqlSessionFactory = new SqlSessionFactoryBuilder().build(reader);
-            reader.close();
-        } catch (IOException ignore) {
-        	ignore.printStackTrace();
-        }
+			Reader reader = Resources.getResourceAsReader("mybatis-config.xml");
+			sqlSessionFactory = new SqlSessionFactoryBuilder().build(reader);
+			reader.close();
+		} catch (IOException ignore) {
+			ignore.printStackTrace();
+		}
 	}
-	
-	public SqlSession getSqlSession(){
+
+	public SqlSession getSqlSession() {
 		return sqlSessionFactory.openSession();
 	}
-	
+
 }
