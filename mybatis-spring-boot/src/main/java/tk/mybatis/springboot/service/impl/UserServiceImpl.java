@@ -12,8 +12,11 @@ import tk.mybatis.springboot.service.UserService;
 @Service
 public class UserServiceImpl implements UserService {
 
-	@Autowired
-	private UserMapper userMapper;
+	private final UserMapper userMapper;
+
+	public UserServiceImpl(UserMapper userMapper) {
+		this.userMapper = userMapper;
+	}
 
 	@Override
 	public SysUser findById(Long id) {

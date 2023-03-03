@@ -20,9 +20,12 @@ import tk.mybatis.springboot.mapper.CountryMapper;
 )
 public class Application implements CommandLineRunner {
 
-	@Autowired
-	private CountryMapper countryMapper;
-	
+	private final CountryMapper countryMapper;
+
+	public Application(CountryMapper countryMapper) {
+		this.countryMapper = countryMapper;
+	}
+
 	public static void main(String[] args) {
 		SpringApplication.run(Application.class, args);
 	}
