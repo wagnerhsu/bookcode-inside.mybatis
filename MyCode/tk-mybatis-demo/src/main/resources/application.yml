@@ -1,0 +1,21 @@
+
+server:
+  port: 5054
+spring:
+  profiles:
+    active: dev
+  datasource:
+    url: jdbc:mysql://192.168.1.45:3503/mybatis
+    username: root
+    password: 123456
+    driverClassName: com.mysql.cj.jdbc.Driver
+
+logging:
+  level:
+    root: DEBUG
+    tk.mybatis.springboot.mapper: TRACE
+    tk.mybatis.simple.mapper: TRACE
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  typeAliasesPackage: com.wagner.demo.po

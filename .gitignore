@@ -1,3 +1,4 @@
 target/
 .vscode/
 .idea/
+/MyCode/tk-mybatis-demo/src/main/resources/application-dev.yml
